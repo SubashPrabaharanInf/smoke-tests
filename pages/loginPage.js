@@ -23,10 +23,11 @@ class loginPage{
             await this.credentials.click();
             await this.usernameInput.fill(username);
             await this.passwordInput.fill(password);
+            await this.page.waitForTimeout(3000);
             await this.loginButton.click();
-            // await this.selOrg.click();
-            // await this.opt.click();
-            // await this.proceed.click();
+            await this.selOrg.click();
+            await this.opt.click();
+            await this.proceed.click();
         }
 
 
