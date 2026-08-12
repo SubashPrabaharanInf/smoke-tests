@@ -16,7 +16,7 @@ class loginPage{
     async goto(){
         await this.page.goto('https://dev-ph2.auratrace.ai/');
         await this.page.waitForLoadState('networkidle');
-        await screenshot({ filename: './screenshots/login-page.jpg',fullpage: true });
+        await screenshot({ filename: './screenshots-login/login-page.jpg',fullpage: true });
 
     }
 
@@ -25,13 +25,13 @@ class loginPage{
     await this.credentials.click();
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);
-    await screenshot({ filename: './screenshots/cred-page.jpg',fullpage: true });
+    await screenshot({ filename: './screenshots-login/cred-page.jpg',fullpage: true });
     await this.loginButton.click();
     await this.selOrg.click();
     await this.opt.click();
     await this.proceed.click();
     await this.page.waitForTimeout(5000)
-    await screenshot({filename : './screenshots/home-page.jpg',fullpage:true});
+    await screenshot({filename : './screenshots-login/home-page.jpg',fullpage:true});
     
 
 
