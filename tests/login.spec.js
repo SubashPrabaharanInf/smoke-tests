@@ -7,3 +7,7 @@ test('@login Login Test', async ({ page }) => {
     await login.goto();
     await login.login('admin@auratrace.ai', 'admin');
 });
+
+
+
+
