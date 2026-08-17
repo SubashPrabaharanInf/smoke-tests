@@ -37,17 +37,29 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+       // viewport: { width: 1200, height: 1980 },
+        //launchOptions: { args: ['--start-maximized'] },
+      },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: {
+        ...devices['Desktop Firefox'],
+        // viewport: { width: 1200, height: 1980},
+        //launchOptions: { args: ['--start-maximized'] },
+      },
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: {
+        ...devices['Desktop Safari'],
+       // viewport: { width: 1200, height: 1980 },
+        //launchOptions: { args: ['--start-maximized'] },
+      },
     },
 
     /* Test against mobile viewports. */
