@@ -48,8 +48,8 @@ export default defineConfig({
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
-        // viewport: { width: 1200, height: 1980},
-        //launchOptions: { args: ['--start-maximized'] },
+        viewport: { width: 1200, height: 1980},
+        launchOptions: { args: ['--start-maximized'] },
       },
     },
 
@@ -58,7 +58,7 @@ export default defineConfig({
       use: {
         ...devices['Desktop Safari'],
        // viewport: { width: 1200, height: 1980 },
-        //launchOptions: { args: ['--start-maximized'] },
+        launchOptions: { args: ['--start-maximized'] },
       },
     },
 
