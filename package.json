@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:qms": "playwright test tests/qms.spec.js",
+    "test:lms": "playwright test tests/lms.spec.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
