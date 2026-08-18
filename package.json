@@ -6,7 +6,8 @@
   "scripts": {
     "test": "playwright test",
     "test:qms": "playwright test tests/qms.spec.js",
-    "test:lms": "playwright test tests/lms.spec.js"
+    "test:lms": "playwright test tests/lms.spec.js",
+    "test:login": "playwright test tests/login.spec.js"
   },
   "keywords": [],
   "author": "",
