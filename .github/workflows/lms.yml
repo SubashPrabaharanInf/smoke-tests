@@ -29,10 +29,10 @@ jobs:
       run: npm ci
       
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps chromium
+      run: npx playwright install --with-deps 
       
     - name: Run LMS Tests
-      run: npm run test lms.spec.js --project=chromium
+      run: npx playwright test lms.spec.js  --project=chromium
       
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
