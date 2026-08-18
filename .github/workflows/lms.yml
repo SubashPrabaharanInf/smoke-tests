@@ -29,7 +29,7 @@ jobs:
       run: npm ci
       
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps chromium
+      run: npx playwright install --with-deps 
       
     - name: Run LMS Tests
       run: npm run test lms.spec.js --project=chromium
